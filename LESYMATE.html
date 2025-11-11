@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LESYMATE Paris</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Lesymate.css">
+    </head>
+    <body>
+        <header class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>LESYMATE <span>Paris</span></h1>
+                <p>L'âme du raffinement.<br> Là où chaque création naît d'une émotion.<br> Une maison dédiée à l'art de sublimer l'âme à travers la beauté, le luxe et la lumière.</p>
+                <a href="#collections" class="btn">Découvrir nos collections</a>
+            </div>
+        </header>
+
+    <section id="collections" class="collections">
+        <h2>Nos Univers</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/lesymateluxe.jpg" alt="Accesoire de luxe">
+                <h3>Accesoire</h3>
+                <p>Découvrez notre collection d'accessoires de luxe, alliant élégance et sophistication pour sublimer votre style.</p>
+            </div>
+            <div class="card">
+                <img src="images/lesymatebeaute.jpg" alt="Produits Lesymate">
+                <h3>Beauté</h3>
+                <p>Plongez dans l'univers de la beauté avec nos produits exclusifs, conçus pour révéler votre éclat naturel.</p>
+            </div>
+            <div class="card">
+                <img src="images/lesymatemode.jpg" alt="Mode Lesymate">
+                <h3>Mode</h3>
+                <p>Des pièces qui incarnent la grâce parisienne et la créativité intemporelle.</p>
+            </div>
+            <div class="card">
+                <img src="images/lesymateparfum.jpg" alt="Parfum Lesymate">
+                <h3>Parfum</h3>
+                <p>Des fragrances sculptées comme des émotions, des souvenirs à fleur de peau.</p>
+            </div>
+        </div>
+    </section>    
+            
+    <section class="contact">
+        <h2> Besoin de <strong><em>Conseil</em></strong>?</h2>
+        <p>Notre équipe se tient à votre disposition pour toute demande personalisée</p>
+        <a href="mailto:cephoras.ngb@gmail.com?subject=Demande%20de%20conseil%20LESYMATE" class="btn">Contactez-nous par email</a>
+        <div class="social">
+            <a href="https://x.com/"target="_blank">Retrouvez nous sur X</a> 
+            <a href="https://www.instagram.com/itts_ras.kk18/"target="_blank">Retrouvez nous sur Instagram</a>
+        </div>
+    </section>
+       
+        <footer>
+            &copy; 2024 LESYMATE Paris. Tous droits réservés.
+        </footer>
+
+        <script>
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.3 });
+            cards.forEach(card => observer.observe(card));
+        </script>
+    </body>
+
+
+</html>
