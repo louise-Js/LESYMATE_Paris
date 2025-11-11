@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #2e2e2e;
+    background-color: #f8f6f2;
+    overflow-x: hidden;
+}
+.hero {
+    position: relative;
+    background-image: url('LESYMATE_Photo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.hero h1 span {
+    color: #d1b280;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d1b280;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #b9975b;
+}
+
+.collections {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f2efe9;
+}
+
+.collections h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    transition: all 0.6s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    margin: 0 15px;
+    color: #d1b280;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #b9975b;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
